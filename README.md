@@ -11,7 +11,6 @@
 ## How to Submit
 * Fork this repo.
 * Clone it locally and use any IDE of your choice.
-* Add/create the desired files with the desired **optimised image sizes** (using any online image size optimizer), then begin with your code.
 * Create a pull request to commit your modifications and push your code.
 * Deploy your code on Github Pages, Netlify, or any other web hosting (Netlify is recommended and it's easy).
 * Put the deployed link in the about section that is at right side on your repo page.
