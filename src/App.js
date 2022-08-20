@@ -35,8 +35,7 @@ export default function App() {
     <motion.div
       className="App"
       initial="hidden"
-      // animate="visible"
-      // animate={true}
+
       animate="visible" 
       variants={container}
     >
@@ -50,9 +49,6 @@ export default function App() {
           return <AnimatedText {...item} key={index} />;
         })}
       </div>
-      {/* <button onClick={handleReplay}>
-        Replay <span>⟲</span>
-      </button> */}
     </motion.div>
    
     </>
