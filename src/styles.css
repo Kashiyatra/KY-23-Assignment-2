@@ -79,8 +79,8 @@ p{
   background-color: white;
   padding: 50px;
 
-  /* background: var(--accent); */
 }
+
 
 .squares {
   display: grid;
@@ -89,18 +89,19 @@ p{
   grid-row-gap: 10px;
   place-items: center;
   margin-left: 45%;
-  /* margin:10px auto; */
-  /* margin: auto;
-  margin-left: auto;
-  grid-template-rows: 120 120; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+
 }
 .smallSquare{
   width: 100px;
   height: 100px;
+  
   border-radius: 20px;
+}
+.smallSquare:hover{
+  cursor: grab;
+  opacity: 0.8;
+  transition: 0.5s;
+  border-radius: 50%;
 }
 @media screen and (max-width: 1300px){
   .squares{
@@ -132,12 +133,9 @@ p{
     font-size: 1.2rem;
   }
   .squares{
-    grid-template-columns: 50px 70px;
-    margin-left: 30%;
+    
+    grid-template-columns: 120px 100px;
+    margin-left: 10%;
   }
-  .smallSquare{
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-  }
+
 }
