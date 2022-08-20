@@ -139,3 +139,10 @@ p{
   }
 
 }
+@media screen and (max-width: 350px){
+  .squares{
+    
+    grid-template-columns: 120px 100px;
+    margin-left: 20%;
+  }
+}
