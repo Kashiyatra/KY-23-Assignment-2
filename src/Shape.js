@@ -26,7 +26,7 @@ export default function Shape(){
                     }}
                     key={item}
                     layout
-                    transition={{ type: "spring", stiffness: 350, damping: 25 }}
+                    transition={{ type: "spring", stiffness: 350, damping: 33 }}
                 />
             ))}
         </div>
