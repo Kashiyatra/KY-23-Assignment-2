@@ -10,13 +10,13 @@ export default function App() {
     { type: "heading1", text: "KASHIYATRA 2022" },
     {
       type: "heading2",
-      text: "IIT (BHU)VARANASI"
+      text: "IIT (BHU)VARANASI Theme"
     }
   ];
   const paragraphText=[
     {
       type: "paragraph",
-      text: "Kashiyatra is housed in the holy city of Varanasi, the city older than history and with a cultural canvas as intricate as its gullies and offers a window into the hidden turnings of the city's soul. Owing to the ongoing global pandemic, Kashiyatra this year resorted to the online medium. Its sponsors include some of the biggest companies like Ultratech, 9xm, Daily Hunt, Growfitter, Spartan Poker and SECL, opening the doors to its events to countless students who couldn't have attended otherwise."
+      text: "The Pandemic may have brought our world to a standstill. Time came to a stop and motion ceased. Now, as the world recovers, it comes back stronger and more alive than ever. Kashiyatra presents before you a Cultural Resurgence — a celebration of the rebound of Culture in its unique styles and hues. With a myriad of events and artists, this year Kashiyatra celebrates the undying Culture that unites us and keeps us enthralled."
     }
   ]
 
