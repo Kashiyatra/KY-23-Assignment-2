@@ -1,0 +1,267 @@
+@import url(//fonts.googleapis.com/css?family=Sofia);
+@import url(//fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong);
+body {
+  margin:0;
+}
+
+h1 {
+   font-family: "Trirong", serif;
+  color:rgb(198, 202, 200);
+  font-weight:bold;
+  letter-spacing: 2px;
+  font-size:48px;
+  top:7%;
+  align-self: center;
+}
+.text {
+  font-family:  "Sofia", sans-serif;
+  letter-spacing: 1px;
+  font-size:18px;
+  color: rgb(144, 164, 169);
+  font-weight:bold  ;
+}
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgb(21, 40, 64) 0%, rgb(10, 51, 44) 100%);
+  color:rgb(255, 255, 255);
+}
+.logo {
+  width:53px;
+  
+  margin-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+  border-radius:5px;
+  opacity:0.86;
+}
+
+.inner-header {
+  height:20vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Silkscreen', cursive;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; 
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:2vh;
+  text-align:center;
+  background-color: rgba(255, 255, 255, 0.687);
+  font-size:16px;
+  color:rgb(47, 83, 83);
+}
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+
+
+
+
+
+
+
+@media  only screen and (max-width: 500px) {
+  .waves {
+    height:28px;
+    min-height:28px;
+  }
+  .content {
+    height:15vh;
+  }
+  h1 {
+    font-family: "Trirong", serif;
+    font-size:26px;
+    top:5%;
+    margin-bottom: none;
+    font-weight: 100;
+
+  }
+  .text{
+    font-family: "Trirong", serif;
+    font-size: 13px;
+    letter-spacing: 0px;
+  }
+  
+  
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    height: 30vh;
+  }
+  .TEXT_BOX{
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 9vh;
+    transform:translateY(29px);
+  }
+  .TExt_indv{
+    font-family: "Trirong", serif;
+    margin: 10px;
+    color: rgb(49, 66, 60);
+  }
+  
+  .valores {
+    flex-shrink: 1;
+    font-family: "Trirong", serif;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width:100%;
+  }
+  
+  li.valor {
+    width: 0;
+    height: 0;
+    display: inline-flex;
+    
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 23%;
+    color: #fff;
+    background: #273c75;
+    font-size: 0;
+    text-align: center;
+    animation: growth 1s ease forwards;
+  }
+  
+  
+  
+  @keyframes growth {
+    0% {
+      width: 0;
+      height: 0;
+      font-size: 0;
+    }
+    
+    100% {
+      width: 30px;
+      height: 30px;
+      font-size: 1.4rem;
+      text-align: center;
+    }
+  }
+  
+  
+}
+@keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 21vh;
+  }
+  .TEXT_BOX{
+    left:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 11vh;
+  }
+  .TExt_indv{
+    margin: 15px;
+    color: rgb(49, 66, 60);
+  }
+  
+  .valores {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .valor {
+    width: 0;
+    height: 0;
+    display: inline-flex;
+    align-items: center;
+    margin: 15px;
+    padding: 25px;
+    border-radius: 65%;
+    color: #fff;
+    background: #273c75;
+    font-size: 0;
+    text-align: center;
+    animation: growth 1s ease forwards;
+  }
+  
+  .valor:nth-child(1) {
+    animation-delay: 0;
+  }
+  
+  .valor:nth-child(2) {
+    animation-delay: .5s;
+  }
+  
+  .valor:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  
+  @keyframes growth {
+    0% {
+      width: 0;
+      height: 0;
+      font-size: 0;
+    }
+    
+    100% {
+      width: 50px;
+      height: 50px;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+  }
+  
