@@ -37,7 +37,7 @@ function App() {
     <div className="items">
       <div className="card">
         <div className="card-content">
-          <h2 className="card-title">What are skills of a Front-End developer?</h2>
+          <h2 className="card-title">Skills for Front-End Dev.?</h2>
           <p className="card-body"> The skills are HTML, CSS, JavaScript Frameworks (CSS and JavaScript frameworks), Responsive Design, Version Control/Git Testing/Debugging Browser Developer Tools, Web Performance SEO (Search Engine Optimization), Command Line CMS (Content Management System).</p>
           <a href="#" className="button">
             Click Here
