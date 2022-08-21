@@ -1,0 +1,32 @@
+.main-box {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+}
+
+li {
+    /* display: block; */
+    /* position: relative; */
+    float: left;
+    width: 27%;
+    height: 200px;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    /* background-color:blue; */
+    margin: 2%;
+    border-radius: 20px;
+}
+
+.search-bar {
+    width: 100%;
+    text-align: center;
+    padding: 0px 100px;
+}
+
+.topics-box {
+
+}
