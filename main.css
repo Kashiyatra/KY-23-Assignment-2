@@ -1,0 +1,59 @@
+body{
+    height:300vh;
+    margin:0;
+
+}
+.line-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    overflow:hidden;
+}
+svg{
+    display:inline-block;
+    height:100%;
+   
+}
+section{
+    display:grid;
+    height:100vh;
+    place-content:center;
+    font-size:4rem;
+    
+
+}
+.one{
+    background:url(./3.jpg);
+    background-size:cover;
+    
+
+}
+.two{
+    position:relative;
+    overflow:hidden;
+    font-size:6rem;
+
+}
+p{
+    position:absolute;
+    z-index:-1;
+    color:rgb(179, 127, 227);
+    top:35%;
+    left:28%;
+    font-size:10rem;
+    white-space:nowrap;
+
+}
+/* .path {
+    stroke-dasharray: 4700;
+    animation: dash 5s linear;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 1000;
+    }
+  } */
