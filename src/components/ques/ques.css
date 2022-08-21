@@ -1,0 +1,13 @@
+.hidden {
+    display: none;
+}
+
+.card{
+    background: none;
+    border: none;
+}
+
+.plus {
+    float: right;
+    /* margin-right: 10px; */
+}
