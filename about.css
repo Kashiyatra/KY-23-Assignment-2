@@ -1,0 +1,164 @@
+#h1{
+    margin: 20px;
+    padding: auto;
+    font-style: italic;
+    font-weight: bold;
+    text-shadow: aliceblue;
+    left: 500px;
+}
+ 
+#p{
+    margin: 200px;
+    margin-top: 100px;
+    top: auto;
+    font-size: 30px;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+
+#flex{
+    top: 500px;
+}
+
+.img-responsive{
+    z-index: -1;
+    position: absolute;
+}
+
+.img-responsive .e3{
+   border-radius: 100px;
+   height: 150px;
+   width: 150px;
+   margin-left: 150px;
+   margin-right: 50px;
+}
+
+.img-responsive .e3:hover{
+    background-color: blue;
+    color: aqua;
+}
+
+
+.img-responsive .e2{
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+.img-responsive .e2:hover{
+    background-color: blue;
+    color: aqua;
+}
+
+
+.img-responsive .e1{
+    border-radius: 100px;
+    height: 150px;
+    width: 150px;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+.img-responsive .e1:hover{
+    background-color: blue;
+    color: aqua;
+}
+
+.img-responsive .s{
+    display: inline;
+    font-weight: bold;
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+
+.img-responsive #e1{
+    margin-left: 190px;
+    margin-right: 50px;
+}
+
+.img-responsive #e2{
+    margin-left: 250px;
+    margin-right: 50px;
+}
+
+.img-responsive #e3{
+    margin-left: 250px;
+    margin-right: 50px;
+}
+
+.numbers{
+    font-size: large;
+    animation: countNumber 4s linear infinite;
+    animation-timing-function: steps(10);
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+
+.numbers2{
+    font-size: large;
+    transform: translateY(-100%);
+    animation: countNumber2 4s linear infinite;
+    animation-timing-function: steps(11);
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+
+.numbers3{
+    font-size: large;
+    transform: translateY(-185%);
+    animation: countNumber3 4s linear infinite;
+    animation-timing-function: steps(10);
+    font-family: "Brush Script MT", "Brush Script Std", "cursive";
+}
+
+@-moz-keyframes countNumber{
+    0% {
+        margin-left: 200px;
+      }
+      100% {
+        margin-left: 200px;
+      }
+}
+
+@keyframes countNumber2{
+    0% {
+        margin-left: 570px;
+      }
+      100% {
+        margin-left: 570px;
+      }
+}
+
+@-moz-keyframes countNumber3{
+    0% {
+        margin-left: 950px;
+      }
+      100% {
+        margin-left: 950px;
+      }
+}
+
+@-moz-keyframes countNumber{
+    0% {
+        margin-left: 200px;
+      }
+      100% {
+        margin-left: 200px;
+      }
+}
+
+@media only screen and(max-width: 600px){
+    #h1{
+        text-align: center;
+    }
+
+    .img-responsive{
+        position: relative;
+    }
+
+    .img-responsive #f{
+        display: inline;
+    }
+
+    .img-responsive .s{
+       display: inline;
+    }
+}
