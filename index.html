@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="line-container">
+        
+                <svg  viewBox="0 0 1440 2024" fill="none" preserveAspectRatio="xMidYMax meet">
+                    <rect  fill="white"/>
+                    <path class="path" d="M725 6V373L685.5 412.5H662L631.5 443L597 477.5H561L534 504.5L493.5 545H479L458 566L447.5 576.5H420L392.5 604L354.5 642H335L314 663H297L288.5 671.5L259.5 700.5H241L234.5 707L215 726.5H200L186 740.5L179.5 747L169.5 757L158 768.5L146.5 780V1098H163H174H195L209.5 1083.5L220.5 1072.5H243L252.5 1063L268.5 1047H289L307 1029L319.5 1016.5L335.5 1000.5H352H387L392.5 995L404.5 983H420L436.5 966.5H468H493.5H516L532.5 983L550 1000.5L566 1016.5L578.5 1029H597L615 1047H631.5V1063L652 1083.5H631.5H615L604 1072.5H597H578.5H561L550 1061.5H532.5H516H504H493.5H468L457 1072.5H436.5L425.5 1083.5H420H404.5L390 1098H370L354.5 1113.5H335L319.5 1129H307L289 1147L279 1157L297 1175L307 1185H335L352 1202L370 1220L387 1237H404.5H425.5H468H493.5H516H534L551 1220L561 1210V1258L550 1269L534 1285H516H493.5H458L436.5 1306.5L425.5 1295.5H387H370H335.5H289L252.5 1259L234.5 1241L213.5 1220H179.5H158H146.5V1534V1558L163 1574.5L186 1597.5H209.5L261 1649H297L335 1687L370 1722H392.5L425.5 1755H436.5L468 1786.5H493.5L516 1809L541.5 1834.5L566 1859H597L615 1877L641 1903H674L692.5 1921.5L702.5 1931.5H714L728.5 1946L743 1931.5H774L793 1912.5L815.5 1890L828.5 1877H860L878 1859L902.5 1834.5L928 1809H956L978.5 1786.5L1010 1755L1043 1722H1080L1130 1672H1146L1169 1649L1196 1622H1250V1597.5L1273 1574.5L1299 1548.5V1220H1273H1250L1242 1228H1222L1209 1241L1191 1259L1169 1281H1146L1130 1297H1112H1090H1066H1030H1010L982 1269L971 1258H956L939 1241V1220H914V1202L902.5 1190.5H939L958.5 1210L971 1222.5H1010H1030H1043H1066H1090L1102.5 1210H1112H1130L1146 1194V1175H1169L1187 1157L1169 1139H1146L1130 1123H1102.5L1090 1110.5L1080 1100.5H1066V1083.5H1043L1032 1072.5L1010 1050.5L997.5 1063H971H956H939H914L893.5 1083.5H878H860H828.5H815.5L836 1063L860 1039L882.5 1016.5L902.5 996.5L928 971H956L978.5 948.5H997.5H1030L1052.5 971H1080L1102.5 993.5H1130H1169V1016.5L1191 1038.5L1215.5 1063H1242L1262.5 1083.5H1284H1299V780V757L1262.5 720.5H1222L1187 685.5L1169 667.5H1130L1104.5 642L1080 617.5L1052.5 590H1010L982 562L956 536L939 519" stroke="#BD37EC" stroke-opacity="0.33" stroke-width="25"/>
+                    </svg>
+                    
+                        
+                
+        </div>
+
+            <section class="one">
+                <h1 class="scroll" data-rate="0.4" data-direction="vertical">😀KASHIYATRA😀</h1>
+            </section>
+
+            <section class="two">
+                <h1 class="scroll" data-rate="0.2" data-direction="vertical">KY-TEAM</h1>
+                <p>CoreTeam</p>
+            </section>
+            
+            <script src="three.js"></script>
+            
+            <script >
+             
+            //  import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js';
+      //render       
+             const scene = new THREE.Scene();
+             scene.background= new THREE.TextureLoader().load( `/photo/1.jpg` );
+            
+                const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+                const renderer = new THREE.WebGLRenderer();
+                renderer.setSize( window.innerWidth, window.innerHeight );
+                document.body.appendChild( renderer.domElement );
+//geometry
+                const geometry = new THREE.BoxGeometry( 1, 1, 1 );
+                const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+                const cube = new THREE.Mesh( geometry, material );
+                scene.add( cube );
+
+                cube.position.set(0,1)
+
+                camera.position.z = 2.5;
+// Lights
+
+                const pointLight = new THREE.PointLight(0xffffff, 0.1)
+                pointLight.position.x = -3
+                pointLight.position.y = 1
+                pointLight.position.z = 0
+                scene.add(pointLight)
+
+
+
+                /**
+ * Sizes
+ */
+const sizes = {
+    width: window.innerWidth,
+    height: window.innerHeight
+}
+
+window.addEventListener('resize', () =>
+{
+    // Update sizes
+    sizes.width = window.innerWidth
+    sizes.height = window.innerHeight
+
+    // Update camera
+    camera.aspect = sizes.width / sizes.height
+    camera.updateProjectionMatrix()
+
+    // Update renderer
+    renderer.setSize(sizes.width, sizes.height)
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+})
+
+
+// /**
+//  * Camera
+//  */
+// // Base camera
+// const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100)
+// camera.position.x = 0
+// camera.position.y = 0
+// camera.position.z = 2
+
+
+// scene.add(camera)
+
+
+
+                //animate
+                
+			function animate() {
+				requestAnimationFrame( animate );
+
+				cube.rotation.x += 0.01;
+				cube.rotation.y += 0.01;
+
+                a.rotation.y+=0.01
+                b.rotation.y+=0.01
+                c.rotation.y+=0.01
+
+				renderer.render( scene, camera );
+			};
+
+
+
+            //box
+            
+ const box = new THREE.BoxGeometry( 1.5, 1.5, 0.1 );
+ var texAll= []
+ var tex1 =new THREE.TextureLoader().load(`/photo/2.jpg`)
+ var tex2 =new THREE.TextureLoader().load(`/photo/2.jpg`)
+ var tex3 =new THREE.TextureLoader().load(`/photo/3.jpg`)
+ var tex4 =new THREE.TextureLoader().load(`/photo/0.jpg`)
+ var tex5 =new THREE.TextureLoader().load(`/photo/userLogo.jpg`)
+ var tex6 =new THREE.TextureLoader().load(`/photo/userLogo.jpg`)
+ texAll.push(new THREE.MeshBasicMaterial( { map:tex1} ) )
+ texAll.push(new THREE.MeshBasicMaterial( { map:tex2} ) )
+ texAll.push(new THREE.MeshBasicMaterial( { map:tex3} ) )
+ texAll.push(new THREE.MeshBasicMaterial( { map:tex4} ) )
+ texAll.push(new THREE.MeshBasicMaterial( { map:tex5} ) )
+ texAll.push(new THREE.MeshBasicMaterial( { map:tex6} ) )
+
+ 
+
+ const a = new THREE.Mesh( box, texAll);
+ scene.add( a);
+ 
+ a.position.set(-3,-1)
+
+
+
+//b
+var texAllb= []
+ var tex1b =new THREE.TextureLoader().load(`/photo/2.jpg`)
+ var tex2b =new THREE.TextureLoader().load(`/photo/1.jpg`)
+ var tex3b =new THREE.TextureLoader().load(`/photo/3.jpg`)
+ var tex4b =new THREE.TextureLoader().load(`/photo/0.jpg`)
+ var tex5b =new THREE.TextureLoader().load(`/photo/userLogo.jpg`)
+ var tex6b =new THREE.TextureLoader().load(`/photo/userLogo.jpg`)
+ texAllb.push(new THREE.MeshBasicMaterial( { map:tex1b} ) )
+ texAllb.push(new THREE.MeshBasicMaterial( { map:tex2b} ) )
+ texAllb.push(new THREE.MeshBasicMaterial( { map:tex3b} ) )
+ texAllb.push(new THREE.MeshBasicMaterial( { map:tex4b} ) )
+ texAllb.push(new THREE.MeshBasicMaterial( { map:tex5b} ) )
+ texAllb.push(new THREE.MeshBasicMaterial( { map:tex6b} ) )
+
+ 
+
+ const b = new THREE.Mesh( box, texAllb);
+ scene.add( b);
+ b.position.set(0,-1)
+
+ //c
+
+ var texAllc= []
+ var tex1c =new THREE.TextureLoader().load(`/photo/2.jpg`)
+ var tex2c =new THREE.TextureLoader().load(`/photo/1.jpg`)
+ var tex3c =new THREE.TextureLoader().load(`/photo/3.jpg`)
+ var tex4c =new THREE.TextureLoader().load(`/photo/0.jpg`)
+ var tex5c =new THREE.TextureLoader().load(`/photo/userLogo.jpg`)
+ var tex6c =new THREE.TextureLoader().load(`/photo/userLogo.jpg`)
+ texAllc.push(new THREE.MeshBasicMaterial( { map:tex1c} ) )
+ texAllc.push(new THREE.MeshBasicMaterial( { map:tex2c} ) )
+ texAllc.push(new THREE.MeshBasicMaterial( { map:tex3c} ) )
+ texAllc.push(new THREE.MeshBasicMaterial( { map:tex4c} ) )
+ texAllc.push(new THREE.MeshBasicMaterial( { map:tex5c} ) )
+ texAllc.push(new THREE.MeshBasicMaterial( { map:tex6c} ) )
+
+ 
+
+ const c = new THREE.Mesh( box, texAllc);
+ scene.add( c);
+ c.position.set(3,-1)
+
+
+//  textLoader
+
+//  const loader=new THREE.FontLoader();
+
+//  loader.load('./fonts/Genericons_Regular.json',function(font:THREE.font){
+//     const tex=new THREE.TextGeometry('hello',{
+//         font:font,
+//         size:6,
+//         height:2,
+//     })
+//     const texMesh=new THREE.Mesh(tex,[
+//         new THREE.MeshBasicMaterial({color:0xad4000})
+//     ])
+//     scene.add(texMesh)
+//  })
+
+
+// real animate
+
+			animate();
+            </script>
+
+
+
+
+
+
+
+
+            <script src="index.js">
+                
+            </script>
+
+
+</body>
+</html>
