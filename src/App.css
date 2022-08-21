@@ -30,6 +30,8 @@ body {
   overflow: hidden;
   transition: transform 500ms ease;
   margin: 10px;
+  word-wrap    : break-word;
+  overflow-wrap: break-word;
 }
 
 .card:hover,
