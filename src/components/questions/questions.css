@@ -1,0 +1,45 @@
+.questions-box{
+    display: block;
+    position: absolute;
+    height: 70%;
+    width: 50%;
+    top: 15%;
+    left: 25%;
+    z-index: 10;
+    background-color: aliceblue;
+    border-radius: 10px;
+    transition: display 2s;
+    /* border-style:ridge; */
+    
+}
+
+.ques-box{
+    display: block;
+    position: absolute;
+    /* right: 0px; */
+    top: 100px;
+    bottom: 10px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.title{
+    text-align: center;
+    width: 100%;
+    font-size: 2em;
+    border-width: 0 0 1px 0;
+    border-spacing: 1em;;
+    border-color: black;
+    border-style: dotted;
+    
+}
+
+.hidden {
+    display: none;
+    transition: display 2s;
+}
+
+.close{
+    float: right;
+    margin-right: 10px;
+}
